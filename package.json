@@ -1,0 +1,45 @@
+{
+  "name": "my-sub",
+  "version": "1.0.0",
+  "description": "An example of an event subscriber.",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "node ./dist/main.js",
+    "build": "npm run tslint && tsc",
+    "clean": "rm -rf ./dist",
+    "test": "tsc && mocha ./dist/test",
+    "tslint": "tslint -c tslint.json -p tsconfig.json --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/davidjohnmaccallum/my-sub.git"
+  },
+  "keywords": [
+    "Publish Subscribe Pattern",
+    "NodeJS",
+    "Microservice"
+  ],
+  "author": "David MacCallum <davidjohnmac@gmail.com>",
+  "license": "UNLICENCED",
+  "bugs": {
+    "url": "https://github.com/davidjohnmaccallum/my-sub/issues"
+  },
+  "homepage": "https://github.com/davidjohnmaccallum/my-sub#readme",
+  "devDependencies": {
+    "@types/amqplib": "^0.5.13",
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.11.7",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.10",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.14.0",
+    "typescript": "^3.3.4000",
+    "typescript-tslint-plugin": "^0.3.1"
+  },
+  "dependencies": {
+    "amqplib": "^0.5.3"
+  }
+}
